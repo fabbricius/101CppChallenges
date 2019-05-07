@@ -56,7 +56,8 @@ int main()
 	    }
 	}
     }
-  printCardanoTriplet(1,2,3);
+  // testing function
+  // printCardanoTriplet(1,2,3);
   return 0;
 }
 
