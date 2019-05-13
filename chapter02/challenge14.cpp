@@ -17,30 +17,48 @@
 // $ g++ -std=c++14 challenge14.cpp && ./a.exe
 // 101 C++ challenges - chapter 02, challenge 14
 // Enter 5 numbers, press RETURN after each one:
+// 2
 // 3
+// 4
 // 5
-// 7
-// 9
-// 11
-// You entered [3 5 7 9 11 ]
-// Going to test if serie is an arithmetic progression:
-//     first diff computed: 2
-//     new diff computed: 2 (difference between 7 and 5)
-//     new diff computed: 2 (difference between 9 and 7)
-//     new diff computed: 2 (difference between 11 and 9)
-// isArithmetic: true
-// Going to test if serie is a geometric progression:
-//     first multiplicator computed: 1
-//     new multiplicator computed: 1 (multiplicator between 7 and 5)
-//     new multiplicator computed: 1 (multiplicator between 9 and 7)
-//     new multiplicator computed: 1 (multiplicator between 11 and 9)
-// isGeometric: true
+// 6
+// You entered [2 3 4 5 6 ]
+//     Going to test if serie is an arithmetic progression?
+//     first diff computed: 1
+//     new diff computed: 1 (difference between 4 and 3)
+//     new diff computed: 1 (difference between 5 and 4)
+//     new diff computed: 1 (difference between 6 and 5)
+// ==> is this serie arithmetic: true
+//     Going to test if serie is a geometric progression:
+//     first multiplicator computed: 1 (factor between 2 and 3)
+//     new multiplicator computed: 1 (factor between 3 and 4)
+//     The multiplicator is not the same, or is 1. Not an geometric progression!
+// ==> is this serie a geometric progression? false
 
+// $ g++ -std=c++14 challenge14.cpp && ./a.exe
+// 101 C++ challenges - chapter 02, challenge 14
+// Enter 5 numbers, press RETURN after each one:
+// 3
+// 6
+// 12
+// 24
+// 48
+// You entered [3 6 12 24 48 ]
+//     Going to test if serie is an arithmetic progression?
+//     first diff computed: 3
+//     new diff computed: 6 (difference between 12 and 6)
+//     The difference is not the same. Not an arithmetic progression!
+// ==> is this serie arithmetic: false
+//     Going to test if serie is a geometric progression:
+//     first multiplicator computed: 2 (factor between 3 and 6)
+//     new multiplicator computed: 2 (factor between 6 and 12)
+//     new multiplicator computed: 2 (factor between 12 and 24)
+//     new multiplicator computed: 2 (factor between 24 and 48)
+// ==> is this serie a geometric progression? true
 
 // Key points to remember:
 
-// My solution is bad, as the output is shown: 3 5 7 9 11 is seen as a
-// geometric serie, which is wrong.
+
 
 #include <iostream>
 constexpr int MAX_LEN = 5;
