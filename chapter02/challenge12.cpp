@@ -4,7 +4,7 @@
 // end of X! (X factorial), where X is an arbitrary number that is
 // input through the keyboard. For instance, 5! is 120, so it has one
 // trailing zero.
-  
+
 // To compile using the cygwin g++ compiler:
 // g++ -std=c++14 challenge12.cpp && ./a.exe
 
@@ -21,7 +21,7 @@
 // > The range of an int would be quickly exceeded while calculating the factorial value.
 // > So this approach would give wrong results beyond 13!. Hence we have used a
 // > different approach to count the trailing zeros.
-// 
+//
 // A better solution is shown in the book.
 
 #include <iostream>
@@ -50,7 +50,7 @@ int returnNumberOfTrailingZeros(const int& n)
 
 int main()
 {
-  int i;  
+  int i;
   std::cout << "101 C++ challenges - chapter 02, challenge 12" << std::endl;
   std::cout << "Enter a number: ";
   std::cin >> i;
