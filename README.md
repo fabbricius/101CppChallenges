@@ -2,6 +2,8 @@
 My solutions for the "101 Challenges in C++ programming" by Yashavant Kanetkar:
 https://www.amazon.com/Challenges-Programming-Aditya-Kanetkar-Yashavant-ebook/dp/B0753BV83K
 
+![DistoLogo](https://github.com/fabbricius/101CppChallenges/blob/master/101ChallengesInCppProgramming.png)
+
 Please don't take these solutions as example, I wrote them quickly. A lot of them could be 
 improved:
 - functions could be made smaller
